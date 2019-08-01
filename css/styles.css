@@ -1,0 +1,39 @@
+body {
+    background-color: skyblue;
+}
+
+.card-container {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-gap: 1rem;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card-container:mouse-over .card-inner {
+    transform: rotateY(180deg);
+}
+
+.front-face .back-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card {
+display: inline-grid;
+}
+
+.back-face {
+    height: 50px;
+    width: 50px;
+}
