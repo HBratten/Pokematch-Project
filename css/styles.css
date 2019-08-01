@@ -26,6 +26,7 @@ button {
   background-color: #da4332;
   color: #ffdc35;
   font-size: 20px;
+  border: none;
 }
 
 #timer {
@@ -43,6 +44,7 @@ button {
   padding: 20px 10px;
 }
 
+
 footer {
   position: absolute;
   bottom: 0;
@@ -52,6 +54,7 @@ footer {
   font-size: 18px;
   padding: 10px;
 }
+
 
 /*  */
 *,
@@ -95,7 +98,6 @@ body {
 }
 .back {
   transform: rotateY(180deg);
-  background-color: #6589f9;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -104,7 +106,7 @@ body {
   transform: rotateY(180deg);
 }
 .match .front {
-  background: #6589f9 !important;
+  background: #434c4b;
 }
 
 @media only screen and (min-width: 768px) {
