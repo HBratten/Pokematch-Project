@@ -92,7 +92,7 @@ gameGrid.forEach(item => {
   front.classList.add("front");
   const back = document.createElement("div");
   back.classList.add("back");
-  //   back.style.backgroundImage = url(${img});
+  // back.style.backgroundImage = url(${img});
   grid.appendChild(card);
   card.appendChild(front);
   card.appendChild(back);

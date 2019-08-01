@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Nunito", sans-serif;
 }
 
 header {
@@ -12,14 +13,33 @@ header {
 
 .logo {
   width: 75%;
+  padding-top: 10px;
+}
+
+button {
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: #da4332;
+  color: #ffdc35;
+  font-size: 20px;
+}
+
+#timer {
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: #da4332;
+  color: #ffdc35;
+  font-size: 20px;
 }
 
 .start-timer {
   display: flex;
   justify-content: space-between;
-
   background-color: #ffffff;
-  padding: 10px;
+  padding: 20px 10px;
+}
+
+.trademark {
 }
 
 /*  */
@@ -49,8 +69,8 @@ body {
 .card,
 .back,
 .front {
-  height: 150px;
-  width: 150px;
+  height: 50px;
+  width: 50px;
 }
 .back,
 .front {
@@ -77,4 +97,10 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+  .card,
+  .back,
+  .front {
+    height: 120px;
+    width: 120px;
+  }
 }
