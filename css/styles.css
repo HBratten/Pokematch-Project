@@ -22,6 +22,7 @@ button {
   background-color: #da4332;
   color: #ffdc35;
   font-size: 20px;
+  border: none;
 }
 
 #timer {
@@ -37,9 +38,6 @@ button {
   justify-content: space-between;
   background-color: #ffffff;
   padding: 20px 10px;
-}
-
-.trademark {
 }
 
 /*  */
@@ -79,12 +77,11 @@ body {
 }
 .front {
   z-index: 2;
-  background: #fab942 url("../img/question.gif") no-repeat center center /
+  background: url("/assets/images/pokeball2.png") no-repeat center center /
     contain;
 }
 .back {
   transform: rotateY(180deg);
-  background-color: #6589f9;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -93,7 +90,7 @@ body {
   transform: rotateY(180deg);
 }
 .match .front {
-  background: #6589f9 !important;
+  background: #434c4b;
 }
 
 @media only screen and (min-width: 768px) {
