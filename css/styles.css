@@ -1,7 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 header {
   display: flex;
   justify-content: center;
   background-color: #ffffff;
+  width: 100%;
+}
+
+.logo {
+  width: 75%;
+}
+
+.start-timer {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #ffffff;
+  padding: 10px;
 }
 
 /*  */
@@ -11,7 +29,7 @@ header {
   box-sizing: border-box;
 }
 body {
-  margin: 20px 0;
+  /* margin: 20px 0; */
   background: #434c4b;
   font-family: "Nunito", sans-serif;
 }
