@@ -4,6 +4,10 @@
   font-family: "Nunito", sans-serif;
 }
 
+html {
+  height: 100vh;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -40,6 +44,18 @@ button {
   padding: 20px 10px;
 }
 
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #ffffff;
+  color: #4862aa;
+  font-size: 18px;
+  padding: 10px;
+}
+
+
 /*  */
 *,
 *::before,
@@ -47,16 +63,16 @@ button {
   box-sizing: border-box;
 }
 body {
-  /* margin: 20px 0; */
   background: #434c4b;
   font-family: "Nunito", sans-serif;
 }
+
 .grid {
-  max-width: 960px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin: 10px;
 }
 .card {
   position: relative;
@@ -99,5 +115,15 @@ body {
   .front {
     height: 120px;
     width: 120px;
+  }
+
+  body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid {
+    margin-bottom: 100px;
   }
 }
