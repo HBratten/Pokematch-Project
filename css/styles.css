@@ -63,12 +63,9 @@ body {
   background: #434c4b;
   font-family: "Nunito", sans-serif;
 }
+
 .grid {
   max-width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
