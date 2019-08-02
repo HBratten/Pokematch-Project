@@ -80,7 +80,7 @@ let count = 0;
 let previousTarget = null;
 let delay = 1200;
 
-const game = document.getElementById("game");
+const game = document.querySelector("#game");
 const grid = document.createElement("section");
 
 grid.setAttribute("class", "grid");
