@@ -160,7 +160,7 @@ grid.addEventListener("click", event => {
     previousTarget = clicked;
   }
 
-    if (matchCounter === 10) {
+    if (matchCounter === 12) {
       stopTimer();
       
       }
