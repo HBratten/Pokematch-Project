@@ -29,19 +29,17 @@ button {
   border: none;
 }
 
-#timer {
-  padding: 10px 30px;
-  border-radius: 5px;
-  background-color: #da4332;
-  color: #ffdc35;
-  font-size: 20px;
-}
-
 .start-timer {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-content: center;
   background-color: #ffffff;
   padding: 20px 10px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
 }
 
 footer {
@@ -68,8 +66,8 @@ body {
 .grid {
   max-width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   margin: 10px;
 }
 .card {
@@ -80,10 +78,9 @@ body {
 }
 
 label {
-  font-family: 'Anton', sans-serif;
-  font-size: 4em;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
   justify-self: center;
-
 }
 .card,
 .back,
@@ -135,5 +132,15 @@ label {
 
   .grid {
     margin-bottom: 100px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: 10px;
+  }
+
+  label {
+    font-size: 50px;
+    margin-right: 100px;
   }
 }

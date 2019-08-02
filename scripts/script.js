@@ -49,35 +49,26 @@ const cardsArray = [
   }
 ];
 
-
 let minutesLabel = document.getElementById("minutes");
 
-        let secondsLabel = document.getElementById("seconds");
-        let totalSeconds = 0;
-        timeInt = setInterval(setTime, 1000);
+let secondsLabel = document.getElementById("seconds");
+let totalSeconds = 0;
+timeInt = setInterval(setTime, 1000);
 
-        function setTime()
-        {
-            ++totalSeconds;
-            secondsLabel.innerHTML = pad(totalSeconds%60);
-            minutesLabel.innerHTML = pad(parseInt(totalSeconds/60));
-           
-        }
+function setTime() {
+  ++totalSeconds;
+  secondsLabel.innerHTML = pad(totalSeconds % 60);
+  minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
+}
 
-        function pad(val)
-        {
-            let valString = val + "";
-            if(valString.length < 2)
-            {
-                return "0" + valString;
-            }
-            else
-            {
-                return valString;
-            }
-        }
-
-
+function pad(val) {
+  let valString = val + "";
+  if (valString.length < 2) {
+    return "0" + valString;
+  } else {
+    return valString;
+  }
+}
 
 function stopTimer() {
   clearInterval(timeInt);
@@ -91,7 +82,6 @@ let previousTarget = null;
 let matchCounter = 0;
 
 let delay = 1000;
-
 
 const game = document.querySelector("#game");
 const grid = document.createElement("section");
@@ -163,14 +153,12 @@ grid.addEventListener("click", event => {
     previousTarget = clicked;
   }
 
-    if (matchCounter === 16) {
-      stopTimer();
-      // setTimeout(function() {
-        // displayCongrats()
-      }
-      ;
-    }
-);
+  if (matchCounter === 16) {
+    stopTimer();
+    // setTimeout(function() {
+    // displayCongrats()
+  }
+});
 
 // function buildCongrats() {
 //   const page = document.getElementsByClassName(`container`);
@@ -179,7 +167,6 @@ grid.addEventListener("click", event => {
 //   popup.innerHTML = ``;
 //   page[0].appendChild(popup);
 // }
-
 
 // function displayCongrats() {
 //   const popup = document.getElementsByClassName(`congratsPopup`);
@@ -200,9 +187,6 @@ grid.addEventListener("click", event => {
 //   popup[0].innerHTML = ``;
 // }
 
-function refreshPage(){
-   window.location.reload();
-
-});
-
-
+function refreshPage() {
+  window.location.reload();
+}
