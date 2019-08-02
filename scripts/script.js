@@ -147,3 +147,7 @@ grid.addEventListener("click", event => {
     previousTarget = clicked;
   }
 });
+
+function refreshPage() {
+  window.location.reload();
+}
