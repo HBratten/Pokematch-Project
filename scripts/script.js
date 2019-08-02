@@ -154,8 +154,10 @@ grid.addEventListener("click", event => {
 
   if (matchCounter === 16) {
     stopTimer();
+
   }
 });
+
 
 function refreshPage() {
   window.location.reload();
