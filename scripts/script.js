@@ -158,13 +158,14 @@ grid.addEventListener("click", event => {
       setTimeout(resetCards, delay);
     }
     previousTarget = clicked;
-  }
-
     if (matchCounter === 12) {
       stopTimer();
       
       }
-      ;
+  
+  }
+
+   
     }
 );
 
