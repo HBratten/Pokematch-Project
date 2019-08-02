@@ -156,15 +156,20 @@ grid.addEventListener("click", event => {
         setTimeout(match, delay);
       }
       setTimeout(resetCards, delay);
+      if (matchCounter === 11) {
+        stopTimer();
+        
+        }
+
+
+
     }
     previousTarget = clicked;
+   
+  
   }
 
-    if (matchCounter === 12) {
-      stopTimer();
-      
-      }
-      ;
+   
     }
 );
 
@@ -172,6 +177,3 @@ grid.addEventListener("click", event => {
   }
 });
 
-function refreshPage() {
-  window.location.reload();
-}
