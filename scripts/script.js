@@ -150,6 +150,6 @@ grid.addEventListener("click", event => {
   }
 });
 
-function refreshPage(){
+function refreshPage() {
   window.location.reload();
 }
