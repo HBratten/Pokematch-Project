@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background-color: skyblue;
 }
@@ -37,3 +38,134 @@ display: inline-grid;
     height: 50px;
     width: 50px;
 }
+=======
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+html {
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.logo {
+  width: 75%;
+  padding-top: 10px;
+}
+
+button {
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: #da4332;
+  color: #ffdc35;
+  font-size: 20px;
+  border: none;
+}
+
+#timer {
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: #da4332;
+  color: #ffdc35;
+  font-size: 20px;
+}
+
+.start-timer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 20px 10px;
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #ffffff;
+  color: #4862aa;
+  font-size: 18px;
+  padding: 10px;
+}
+
+
+/*  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  background: #434c4b;
+  font-family: "Nunito", sans-serif;
+}
+
+.grid {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin: 10px;
+}
+.card {
+  position: relative;
+  transition: all 0.4s linear;
+  transform-style: preserve-3d;
+  margin: 5px;
+}
+.card,
+.back,
+.front {
+  height: 50px;
+  width: 50px;
+}
+.back,
+.front {
+  position: absolute;
+  backface-visibility: hidden;
+}
+.front {
+  z-index: 2;
+  background: url("/assets/images/pokeball2.png") no-repeat center center /
+    contain;
+}
+.back {
+  transform: rotateY(180deg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.selected {
+  transform: rotateY(180deg);
+}
+.match .front {
+  background: #434c4b;
+}
+
+@media only screen and (min-width: 768px) {
+  .card,
+  .back,
+  .front {
+    height: 120px;
+    width: 120px;
+  }
+
+  body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid {
+    margin-bottom: 100px;
+  }
+}
+>>>>>>> 80a8adda8791bf64fb71746667dad6d8ffb9fc1b
