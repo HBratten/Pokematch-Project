@@ -78,7 +78,7 @@ let firstCard = "";
 let secondCard = "";
 let count = 0;
 let previousTarget = null;
-let delay = 1200;
+let delay = 1000;
 
 const game = document.querySelector("#game");
 const grid = document.createElement("section");
@@ -113,7 +113,7 @@ function resetCards() {
   secondCard = "";
   count = 0;
   previousTarget = null;
-  var selected = document.querySelectorAll(".selected");
+  const selected = document.querySelectorAll(".selected");
   selected.forEach(card => {
     card.classList.remove("selected");
   });
@@ -133,11 +133,9 @@ grid.addEventListener("click", event => {
     count++;
     if (count === 1) {
       firstCard = clicked.parentNode.dataset.name;
-      console.log(firstCard);
       clicked.parentNode.classList.add("selected");
     } else {
       secondCard = clicked.parentNode.dataset.name;
-      console.log(secondCard);
       clicked.parentNode.classList.add("selected");
     }
     if (firstCard && secondCard) {
