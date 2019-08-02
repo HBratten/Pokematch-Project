@@ -49,7 +49,15 @@ const cardsArray = [
   }
 ];
 
-let minutesLabel = document.getElementById("minutes");
+
+function refreshPage(){
+  window.location.reload();
+}
+
+window.addEventListener("keyup", ev => {
+  if (ev.keyCode === 38) {
+    document.querySelector("#startScreen").remove();
+    let minutesLabel = document.getElementById("minutes");
 
 let secondsLabel = document.getElementById("seconds");
 let totalSeconds = 0;
@@ -152,8 +160,15 @@ grid.addEventListener("click", event => {
     previousTarget = clicked;
   }
 
-  if (matchCounter === 16) {
-    stopTimer();
+    if (matchCounter === 12) {
+      stopTimer();
+      
+      }
+      ;
+    }
+);
+
+    
   }
 });
 
