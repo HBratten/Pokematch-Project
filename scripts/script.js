@@ -24,14 +24,6 @@ const cardsArray = [
     img: "../assets/images/haunter.png"
   },
   {
-    name: "jigglypuff",
-    img: "../assets/images/jigglypuff.png"
-  },
-  {
-    name: "mew",
-    img: "../assets/images/mew.png"
-  },
-  {
     name: "mewtwo",
     img: "../assets/images/mewtwo.png"
   },
@@ -48,28 +40,12 @@ const cardsArray = [
     img: "../assets/images/ponyta.png"
   },
   {
-    name: "raichu",
-    img: "../assets/images/raichu.png"
-  },
-  {
-    name: "rattata",
-    img: "../assets/images/rattata.png"
-  },
-  {
-    name: "sandshrew",
-    img: "../assets/images/sandshrew.png"
-  },
-  {
     name: "snorlax",
     img: "../assets/images/snorlax.png"
   },
   {
     name: "squirtle",
     img: "../assets/images/squirtle.png"
-  },
-  {
-    name: "tangela",
-    img: "../assets/images/tangela.png"
   }
 ];
 
@@ -111,8 +87,11 @@ let firstCard = "";
 let secondCard = "";
 let count = 0;
 let previousTarget = null;
-let delay = 1200;
+
 let matchCounter = 0;
+
+let delay = 1000;
+
 
 const game = document.querySelector("#game");
 const grid = document.createElement("section");
@@ -149,7 +128,7 @@ function resetCards() {
   secondCard = "";
   count = 0;
   previousTarget = null;
-  var selected = document.querySelectorAll(".selected");
+  const selected = document.querySelectorAll(".selected");
   selected.forEach(card => {
     card.classList.remove("selected");
   });
@@ -170,11 +149,9 @@ grid.addEventListener("click", event => {
     count++;
     if (count === 1) {
       firstCard = clicked.parentNode.dataset.name;
-      console.log(firstCard);
       clicked.parentNode.classList.add("selected");
     } else {
       secondCard = clicked.parentNode.dataset.name;
-      console.log(secondCard);
       clicked.parentNode.classList.add("selected");
     }
     if (firstCard && secondCard) {
@@ -185,6 +162,7 @@ grid.addEventListener("click", event => {
     }
     previousTarget = clicked;
   }
+
     if (matchCounter === 16) {
       stopTimer();
       // setTimeout(function() {
@@ -224,4 +202,7 @@ grid.addEventListener("click", event => {
 
 function refreshPage(){
    window.location.reload();
-}
+
+});
+
+

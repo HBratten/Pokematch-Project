@@ -16,7 +16,7 @@ header {
 }
 
 .logo {
-  width: 75%;
+  width: 50%;
   padding-top: 10px;
 }
 
@@ -44,7 +44,6 @@ button {
   padding: 20px 10px;
 }
 
-
 footer {
   position: absolute;
   bottom: 0;
@@ -54,7 +53,6 @@ footer {
   font-size: 18px;
   padding: 10px;
 }
-
 
 /*  */
 *,
@@ -71,7 +69,7 @@ body {
   max-width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   margin: 10px;
 }
 .card {
@@ -93,6 +91,7 @@ label {
   height: 50px;
   width: 50px;
 }
+
 .back,
 .front {
   position: absolute;
@@ -118,10 +117,14 @@ label {
 
 @media only screen and (min-width: 768px) {
   .card,
-  .back,
   .front {
     height: 120px;
     width: 120px;
+  }
+
+  .back {
+    height: 140px;
+    width: 140px;
   }
 
   body {
