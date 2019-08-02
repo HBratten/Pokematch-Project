@@ -172,6 +172,3 @@ grid.addEventListener("click", event => {
   }
 });
 
-function refreshPage() {
-  window.location.reload();
-}
