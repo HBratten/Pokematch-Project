@@ -143,4 +143,10 @@ label {
     font-size: 50px;
     margin-right: 100px;
   }
+
+  .start-timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
