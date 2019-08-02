@@ -156,7 +156,7 @@ grid.addEventListener("click", event => {
         setTimeout(match, delay);
       }
       setTimeout(resetCards, delay);
-      if (matchCounter === 12) {
+      if (matchCounter === 11) {
         stopTimer();
         
         }
