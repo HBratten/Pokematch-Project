@@ -49,39 +49,31 @@ const cardsArray = [
   }
 ];
 
-
 let minutesLabel = document.getElementById("minutes");
 
-        let secondsLabel = document.getElementById("seconds");
-        let totalSeconds = 0;
-        timeInt = setInterval(setTime, 1000);
+let secondsLabel = document.getElementById("seconds");
+let totalSeconds = 0;
+timeInt = setInterval(setTime, 1000);
 
-        function setTime()
-        {
-            ++totalSeconds;
-            secondsLabel.innerHTML = pad(totalSeconds%60);
-            minutesLabel.innerHTML = pad(parseInt(totalSeconds/60));
-           
-        }
+function setTime() {
+  ++totalSeconds;
+  secondsLabel.innerHTML = pad(totalSeconds % 60);
+  minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
+}
 
-        function pad(val)
-        {
-            let valString = val + "";
-            if(valString.length < 2)
-            {
-                return "0" + valString;
-            }
-            else
-            {
-                return valString;
-            }
-        }
-
-
+function pad(val) {
+  let valString = val + "";
+  if (valString.length < 2) {
+    return "0" + valString;
+  } else {
+    return valString;
+  }
+}
 
 function stopTimer() {
   clearInterval(timeInt);
 }
+
 const gameGrid = cardsArray.concat(cardsArray).sort(() => 0.5 - Math.random());
 let firstCard = "";
 let secondCard = "";
@@ -92,14 +84,12 @@ let matchCounter = 0;
 
 let delay = 1000;
 
-
 const game = document.querySelector("#game");
 const grid = document.createElement("section");
 
 grid.setAttribute("class", "grid");
 game.appendChild(grid);
 
-// buildCongrats();
 gameGrid.forEach(item => {
   const { name } = item;
   const card = document.createElement("div");
@@ -132,7 +122,6 @@ function resetCards() {
   selected.forEach(card => {
     card.classList.remove("selected");
   });
-  // hideCongrats();
 }
 
 grid.addEventListener("click", event => {
@@ -163,46 +152,11 @@ grid.addEventListener("click", event => {
     previousTarget = clicked;
   }
 
-    if (matchCounter === 16) {
-      stopTimer();
-      // setTimeout(function() {
-        // displayCongrats()
-      }
-      ;
-    }
-);
-
-// function buildCongrats() {
-//   const page = document.getElementsByClassName(`container`);
-//   const popup = document.createElement(`div`);
-//   popup.className = `congratsPopup dimmed`;
-//   popup.innerHTML = ``;
-//   page[0].appendChild(popup);
-// }
-
-
-// function displayCongrats() {
-//   const popup = document.getElementsByClassName(`congratsPopup`);
-//   popup[0].className = `congratsPopup`;
-//   popup[0].innerHTML =
-//       `<h2 class="congratsHeading" > Congratulations! </h2>
-//       <h3 class="congratsTagline" > You've won the game! </h3>
-//       <p class="congratsTime" > ${timer.innerHTML} total time </p>
-//       <p class="congratsStar" > ${starRating} stars </p>
-//       <p class="congratsPlay" > Play Again </p>`;
-//   const play = document.getElementsByClassName(`congratsPlay`);
-//   play[0].addEventListener(`click`,reset);
-// }
-
-// function hideCongrats() {
-//   const popup = document.getElementsByClassName(`congratsPopup`);
-//   popup[0].className = `congratsPopup dimmed`;
-//   popup[0].innerHTML = ``;
-// }
-
-function refreshPage(){
-   window.location.reload();
-
+  if (matchCounter === 16) {
+    stopTimer();
+  }
 });
 
-
+function refreshPage() {
+  window.location.reload();
+}
