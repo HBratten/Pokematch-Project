@@ -59,36 +59,29 @@ window.addEventListener("keyup", ev => {
     document.querySelector("#startScreen").remove();
     let minutesLabel = document.getElementById("minutes");
 
-        let secondsLabel = document.getElementById("seconds");
-        let totalSeconds = 0;
-        timeInt = setInterval(setTime, 1000);
+let secondsLabel = document.getElementById("seconds");
+let totalSeconds = 0;
+timeInt = setInterval(setTime, 1000);
 
-        function setTime()
-        {
-            ++totalSeconds;
-            secondsLabel.innerHTML = pad(totalSeconds%60);
-            minutesLabel.innerHTML = pad(parseInt(totalSeconds/60));
-           
-        }
+function setTime() {
+  ++totalSeconds;
+  secondsLabel.innerHTML = pad(totalSeconds % 60);
+  minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
+}
 
-        function pad(val)
-        {
-            let valString = val + "";
-            if(valString.length < 2)
-            {
-                return "0" + valString;
-            }
-            else
-            {
-                return valString;
-            }
-        }
-
-
+function pad(val) {
+  let valString = val + "";
+  if (valString.length < 2) {
+    return "0" + valString;
+  } else {
+    return valString;
+  }
+}
 
 function stopTimer() {
   clearInterval(timeInt);
 }
+
 const gameGrid = cardsArray.concat(cardsArray).sort(() => 0.5 - Math.random());
 let firstCard = "";
 let secondCard = "";
@@ -99,13 +92,11 @@ let matchCounter = 0;
 
 let delay = 1000;
 
-
 const game = document.querySelector("#game");
 const grid = document.createElement("section");
 
 grid.setAttribute("class", "grid");
 game.appendChild(grid);
-
 
 gameGrid.forEach(item => {
   const { name } = item;
@@ -181,10 +172,6 @@ grid.addEventListener("click", event => {
   }
 });
 
-
-
-
-
-
-
-
+function refreshPage() {
+  window.location.reload();
+}

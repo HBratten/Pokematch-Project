@@ -11,7 +11,7 @@ html {
 header {
   display: flex;
   justify-content: center;
-  background-color: #ffffff;
+  background-color: #4862aa;
   width: 100%;
 }
 
@@ -97,27 +97,25 @@ button {
   border: none;
 }
 
-#timer {
-  padding: 10px 30px;
-  border-radius: 5px;
-  background-color: #da4332;
-  color: #ffdc35;
-  font-size: 20px;
-}
-
 .start-timer {
   display: flex;
-  justify-content: space-between;
-  background-color: #ffffff;
+  flex-direction: column;
+  align-content: center;
+  background-color: #4862aa;
   padding: 20px 10px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
 }
 
 footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: #ffffff;
-  color: #4862aa;
+  background-color: #4862aa;
+  color: #ffdc35;
   font-size: 18px;
   padding: 10px;
 }
@@ -136,8 +134,8 @@ body {
 .grid {
   max-width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   margin: 10px;
 }
 .card {
@@ -148,10 +146,10 @@ body {
 }
 
 label {
-  font-family: 'Anton', sans-serif;
-  font-size: 4em;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
   justify-self: center;
-
+  color: #ffdc35;
 }
 .card,
 .back,
@@ -202,6 +200,25 @@ label {
   }
 
   .grid {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: 10px;
+  }
+
+  #game {
     margin-bottom: 100px;
+  }
+
+  label {
+    font-size: 50px;
+    margin-right: 100px;
+  }
+
+  .start-timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
