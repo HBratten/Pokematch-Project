@@ -80,6 +80,13 @@ body {
   transform-style: preserve-3d;
   margin: 5px;
 }
+
+label {
+  font-family: 'Anton', sans-serif;
+  font-size: 4em;
+  justify-self: center;
+
+}
 .card,
 .back,
 .front {
