@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>PokeMatch</title>
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <div class="card-container">
-    <div class="card-inner">
-    <div class="front-face">
-      <img src="images/arcanine.png" alt="arcanine">
-      </div>
-    <div class="back-face">
-      <img src="images/pokeball2.png">
-    </div>
-    </div>
-    </div>
-    <script src="scripts/script.js"></script>
-  </body>
+ <head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   <title>Memory Game</title>
+   <link rel="stylesheet" href="css/styles.css" />
+   <link
+     href="https://fonts.googleapis.com/css?family=Nunito&display=swap"
+     rel="stylesheet"
+   />
+ </head>
+ <body>
+   <header>
+     <img class="logo" src="assets/pokematch-logo.png" alt="pokematch logo" />
+   </header>
+   <div class="start-timer">
+    <button type="submit"  onClick="refreshPage()">Restart</button>
+     <p id="timer">Timer</p>
+   </div>
+   <div id="game"></div>
+   <footer>
+     <div class="trademark">Amazing Armadillos &trade;</div>
+   </footer>
+   <script src="scripts/script.js"></script>
+ </body>
 </html>
