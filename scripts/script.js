@@ -24,14 +24,6 @@ const cardsArray = [
     img: "../assets/images/haunter.png"
   },
   {
-    name: "jigglypuff",
-    img: "../assets/images/jigglypuff.png"
-  },
-  {
-    name: "mew",
-    img: "../assets/images/mew.png"
-  },
-  {
     name: "mewtwo",
     img: "../assets/images/mewtwo.png"
   },
@@ -48,28 +40,12 @@ const cardsArray = [
     img: "../assets/images/ponyta.png"
   },
   {
-    name: "raichu",
-    img: "../assets/images/raichu.png"
-  },
-  {
-    name: "rattata",
-    img: "../assets/images/rattata.png"
-  },
-  {
-    name: "sandshrew",
-    img: "../assets/images/sandshrew.png"
-  },
-  {
     name: "snorlax",
     img: "../assets/images/snorlax.png"
   },
   {
     name: "squirtle",
     img: "../assets/images/squirtle.png"
-  },
-  {
-    name: "tangela",
-    img: "../assets/images/tangela.png"
   }
 ];
 
