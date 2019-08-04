@@ -165,6 +165,4 @@ function startGame() {
   });
 }
 
-document
-  .querySelector("#startScreen button")
-  .addEventListener("click", startGame);
+document.querySelector("#startScreen").addEventListener("click", startGame);
