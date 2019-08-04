@@ -24,12 +24,7 @@ header {
   background-color: whitesmoke;
   color: #333;
   text-align: center;
-  border: 8px solid;
   border-radius: 10px;
-  box-shadow: 0 1px 32px white;
-  transform: rotate(0) scale(0);
-  animation: boom 1s linear;
-  animation-fill-mode: forwards;
 }
 
 @keyframes boom {
@@ -43,7 +38,7 @@ header {
 }
 
 #startScreen h1 {
-  position:absolute;
+  position: absolute;
   width: 100%;
   color: #222;
   font-size: 40px;
@@ -80,8 +75,6 @@ header {
   text-shadow: 0 2px 0 limegreen, 0 1px 64px white;
   animation: pulse 1.5s linear infinite;
 }
-
-
 
 .logo {
   width: 50%;
