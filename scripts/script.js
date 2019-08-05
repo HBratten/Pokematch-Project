@@ -1,51 +1,51 @@
 const cardsArray = [
   {
     name: "arcanine",
-    img: "../assets/images/arcanine.png"
+    img: "assets/images/arcanine.png"
   },
   {
     name: "bulbasaur",
-    img: "../assets/images/bulbasaur.png"
+    img: "assets/images/bulbasaur.png"
   },
   {
     name: "charmander",
-    img: "../assets/images/charmander.png"
+    img: "assets/images/charmander.png"
   },
   {
     name: "dragonite",
-    img: "../assets/images/dragonite.png"
+    img: "assets/images/dragonite.png"
   },
   {
     name: "eevee",
-    img: "../assets/images/eevee.png"
+    img: "assets/images/eevee.png"
   },
   {
     name: "haunter",
-    img: "../assets/images/haunter.png"
+    img: "assets/images/haunter.png"
   },
   {
     name: "mewtwo",
-    img: "../assets/images/mewtwo.png"
+    img: "assets/images/mewtwo.png"
   },
   {
     name: "pikachu",
-    img: "../assets/images/pikachu.png"
+    img: "assets/images/pikachu.png"
   },
   {
     name: "poliwhirl",
-    img: "../assets/images/poliwhirl.png"
+    img: "assets/images/poliwhirl.png"
   },
   {
     name: "ponyta",
-    img: "../assets/images/ponyta.png"
+    img: "assets/images/ponyta.png"
   },
   {
     name: "snorlax",
-    img: "../assets/images/snorlax.png"
+    img: "assets/images/snorlax.png"
   },
   {
     name: "squirtle",
-    img: "../assets/images/squirtle.png"
+    img: "assets/images/squirtle.png"
   }
 ];
 
