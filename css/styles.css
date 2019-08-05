@@ -108,7 +108,7 @@ label {
 }
 .front {
   z-index: 2;
-  background: url("/assets/images/pokeball2.png") no-repeat center center /
+  background: url("/assets/images/pokeball-two.png") no-repeat center center /
     contain;
 }
 .back {
