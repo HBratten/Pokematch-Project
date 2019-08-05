@@ -56,8 +56,8 @@ function refreshPage() {
 function startGame() {
   document.querySelector("#startScreen").remove();
 
-  let minutesLabel = document.getElementById("minutes");
-  let secondsLabel = document.getElementById("seconds");
+  let minutesLabel = document.querySelector("#minutes");
+  let secondsLabel = document.querySelector("#seconds");
   let totalSeconds = 0;
   timeInt = setInterval(setTime, 1000);
 
@@ -87,11 +87,8 @@ function startGame() {
   let secondCard = "";
   let count = 0;
   let previousTarget = null;
-
   let matchCounter = 0;
-
   let delay = 1000;
-
   const game = document.querySelector("#game");
   const grid = document.createElement("section");
 
