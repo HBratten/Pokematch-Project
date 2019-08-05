@@ -22,7 +22,7 @@ header {
   width: 200px;
   height: 100px;
   text-align: center;
-  background-image: url("/assets/images/sandshrew.png");
+  background-image: url("../assets/images/sandshrew.png");
   background-repeat: no-repeat;
   background-position: right center;
 }
@@ -108,7 +108,7 @@ label {
 }
 .front {
   z-index: 2;
-  background: url("/assets/images/pokeball-two.png") no-repeat center center /
+  background: url("../assets/images/pokeball-two.png") no-repeat center center /
     contain;
 }
 .back {
